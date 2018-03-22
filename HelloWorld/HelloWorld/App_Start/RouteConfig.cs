@@ -25,6 +25,24 @@ namespace HelloWorld
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index2", id = UrlParameter.Optional }
             );
+
+            routes.MapRoute(
+                name: "Default3",
+                url: "{controller}/{action}/{name}",
+                defaults: new { controller = "Home", action = "Index3", id = UrlParameter.Optional }
+            );
+
+            routes.MapRoute(
+                name: "Default4",
+                url: "{controller}/{action}/{id}",
+                defaults: new { controller = "Home", action = "ListeClient", id = UrlParameter.Optional }
+            );
+
+            routes.MapRoute(
+                name: "Default5",
+                url: "{controller}/{action}/{name}",
+                defaults: new { controller = "Home", action = "ChercheClient", id = UrlParameter.Optional }
+            );
         }
     }
 }
